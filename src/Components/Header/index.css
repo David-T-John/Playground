@@ -19,4 +19,19 @@ header {
   -webkit-padding-end: 7vw;
           padding-inline-end: 7vw;
 }
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+header ul li {
+  padding-left: 1em;
+}
 /*# sourceMappingURL=index.css.map */

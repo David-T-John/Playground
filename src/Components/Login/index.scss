@@ -1,0 +1,26 @@
+form {
+  width: 380px;
+  border: solid 1px #ccc;
+  padding: 2em;
+  &#login-form {
+    display: flex;
+    flex-direction: column;
+    label {
+      font-size: 0.75em;
+      font-weight: 600;
+      letter-spacing: -0.05em;
+      color: #333;
+    }
+    input {
+      padding: 0.2em 0.3em;
+      margin: 0.2em 0em;
+    }
+    button {
+      background-color: blueviolet;
+      color: white;
+      border: none;
+      padding: 0.4em 2em;
+      margin: 0.2em 0em;
+    }
+  }
+}

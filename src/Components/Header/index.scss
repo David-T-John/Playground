@@ -7,4 +7,12 @@ header {
   background-color: blueviolet;
   padding-inline-start: 7vw;
   padding-inline-end: 7vw;
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    li {
+      padding-left: 1em;
+    }
+  }
 }
