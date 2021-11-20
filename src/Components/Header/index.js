@@ -1,8 +1,11 @@
 import React from 'react';
+import './index.css';
 const Header = () => {
     return (
         <header>
-            <div></div>
+            <div>
+                <h1>Logo</h1>
+            </div>
             <div>
                 <ul>
                     <li>
