@@ -1,0 +1,32 @@
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+div#loading {
+  height: 2em;
+  width: 2em;
+  border: solid 6px #cccccc;
+  border-radius: 5em;
+  border-top-color: #9a9998;
+  -webkit-animation: spin 0.6s infinite linear;
+          animation: spin 0.6s infinite linear;
+}
+/*# sourceMappingURL=index.css.map */
