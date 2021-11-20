@@ -1,0 +1,36 @@
+form {
+  width: 380px;
+  border: solid 1px #ccc;
+  padding: 2em;
+}
+
+form#login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form#login-form label {
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  color: #333;
+}
+
+form#login-form input {
+  padding: 0.2em 0.3em;
+  margin: 0.2em 0em;
+}
+
+form#login-form button {
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  padding: 0.4em 2em;
+  margin: 0.2em 0em;
+}
+/*# sourceMappingURL=index.css.map */
