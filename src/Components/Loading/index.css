@@ -40,7 +40,7 @@
   border: solid 6px #cccccc;
   border-radius: 5em;
   border-top-color: #9a9998;
-  -webkit-animation: spin 0.6s infinite linear;
-          animation: spin 0.6s infinite linear;
+  -webkit-animation: spin 1s infinite linear;
+          animation: spin 1s infinite linear;
 }
 /*# sourceMappingURL=index.css.map */

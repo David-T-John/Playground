@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { ThemeContext } from '../../context/themeContext';
 import Header from '../Header';
 import Loading from '../Loading';
 import './index.css';
 const Login = () => {
     const [isLoading, setIsLoading] = useState(true);
+    const [theme, toggleTheme] = useContext(ThemeContext);
     setTimeout(()=>{
         setIsLoading(false);
     } ,1000);
@@ -29,7 +31,7 @@ const Login = () => {
                 <input id="password" />
                 <br/>
                 <div>
-                    <button type="submit">LOGIN</button>
+                    <button type="submit" style={{background: theme.background}}>LOGIN</button>
                 </div>
             </form>
         </div>

@@ -18,6 +18,19 @@ header {
           padding-inline-start: 7vw;
   -webkit-padding-end: 7vw;
           padding-inline-end: 7vw;
+  -webkit-box-shadow: 0em 0.2em 1em 0.1em #33333380;
+          box-shadow: 0em 0.2em 1em 0.1em #33333380;
+  margin-bottom: 1em;
+}
+
+header * {
+  text-decoration: none;
+}
+
+header h1 {
+  color: white;
+  font-weight: 900;
+  letter-spacing: -0.05em;
 }
 
 header ul {
@@ -33,5 +46,10 @@ header ul {
 
 header ul li {
   padding-left: 1em;
+  font-weight: 600;
+}
+
+header ul li a {
+  color: white;
 }
 /*# sourceMappingURL=index.css.map */
