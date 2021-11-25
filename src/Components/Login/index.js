@@ -1,11 +1,11 @@
 import { useContext, useState } from 'react';
-import { ThemeContext } from '../../context/themeContext';
+import { ThemeContext } from '../../context/ThemeContext';
 import Header from '../Header';
 import Loading from '../Loading';
 import './index.css';
 const Login = () => {
     const [isLoading, setIsLoading] = useState(true);
-    const [theme, toggleTheme] = useContext(ThemeContext);
+    const theme = useContext(ThemeContext);
     setTimeout(()=>{
         setIsLoading(false);
     } ,1000);
@@ -25,13 +25,15 @@ const Login = () => {
                 <h2>Login</h2>
                 <br/>
                 <label for="email">EMAIL ADDRESS</label>
-                <input id="email-address" />
+                <input id="email-address" type="email" className="form-input"/>
                 <br/>
                 <label for="password">PASSWORD</label>
-                <input id="password" />
+                <input id="password" type="password" className="form-input"/>
                 <br/>
                 <div>
-                    <button type="submit" style={{background: theme.background}}>LOGIN</button>
+                    <button type="submit" 
+                        style={{background: theme.background}}
+                    >LOGIN</button>
                 </div>
             </form>
         </div>

@@ -22,8 +22,15 @@ form#login-form label {
 }
 
 form#login-form input {
-  padding: 0.2em 0.3em;
+  padding: 0.6em 0.6em;
   margin: 0.2em 0em;
+  font-size: 1em;
+}
+
+form#login-form input:focus {
+  outline-color: blue;
+  -webkit-transition: none;
+  transition: none;
 }
 
 form#login-form button {
