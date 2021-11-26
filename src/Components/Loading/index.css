@@ -32,11 +32,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1.5em;
 }
 
-.loading-container div#loading {
-  height: 2em;
-  width: 2em;
+.loading-container div.loading {
   border: solid 6px #cccccc;
   border-radius: 5em;
   border-top-color: #9a9998;

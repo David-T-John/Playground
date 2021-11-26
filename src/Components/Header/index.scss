@@ -1,32 +1,23 @@
+@import "../../main.scss";
 header {
-  display: flex;
-  flex-direction: row;
+  @include row;
+  @include shadow;
+  z-index: 999;
   justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  background-color: blueviolet;
+  height: 9vh;
+  min-height: 3em;
   padding-inline-start: 7vw;
   padding-inline-end: 7vw;
-  box-shadow: 0em 0.2em 1em 0.1em #33333380;
-  margin-bottom: 1em;
+  transition: background-color 0.5s ease-in-out;
+  overflow: hidden;
   * {
     text-decoration: none;
   }
-  h1 {
-    color: white;
-    font-weight: 900;
-    letter-spacing: -0.05em;
+  #header-left {
+    @include row;
   }
   ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include row;
     list-style: none;
-    #theme-toggle {
-      background-color: #ccc;
-      padding: 0.5em;
-      border: none;
-      border-radius: 50%;
-    }
   }
 }

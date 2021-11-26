@@ -1,1 +1,5 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+h2 {
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+/*# sourceMappingURL=index.css.map */

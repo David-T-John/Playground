@@ -1,31 +1,31 @@
-form {
+#login-form {
   width: 380px;
+  height: 100%;
   border: solid 1px #ccc;
   padding: 2em;
-  &#login-form {
-    display: flex;
-    flex-direction: column;
-    label {
-      font-size: 0.75em;
-      font-weight: 600;
-      letter-spacing: -0.05em;
-      color: #333;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  label {
+    font-size: 0.75em;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    color: #333;
+  }
+  input {
+    padding: 0.6em 0.6em;
+    margin: 0.2em 0em;
+    font-size: 1em;
+    &:focus {
+      outline-color: blue;
+      transition: none;
     }
-    input {
-      padding: 0.6em 0.6em;
-      margin: 0.2em 0em;
-      font-size: 1em;
-      &:focus {
-        outline-color: blue;
-        transition: none;
-      }
-    }
-    button {
-      background-color: blueviolet;
-      color: white;
-      border: none;
-      padding: 0.4em 2em;
-      margin: 0.2em 0em;
-    }
+  }
+  button {
+    transition: background-color 0.5s ease-in-out;
+    color: white;
+    border: none;
+    padding: 0.4em 2em;
+    margin: 0.2em 0em;
   }
 }

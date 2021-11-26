@@ -12,9 +12,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  div#loading {
-    height: 2em;
-    width: 2em;
+  padding: 1.5em;
+  div.loading {
     border: solid 6px hsl(50, 0.66, 80);
     border-radius: 5em;
     border-top-color: hsl(50, 0.66, 60);

@@ -6,31 +6,41 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70px;
-  background-color: blueviolet;
+  -webkit-box-shadow: 0em 0.2em 1em 0.1em #33333380;
+          box-shadow: 0em 0.2em 1em 0.1em #33333380;
+  z-index: 999;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 9vh;
+  min-height: 3em;
   -webkit-padding-start: 7vw;
           padding-inline-start: 7vw;
   -webkit-padding-end: 7vw;
           padding-inline-end: 7vw;
-  -webkit-box-shadow: 0em 0.2em 1em 0.1em #33333380;
-          box-shadow: 0em 0.2em 1em 0.1em #33333380;
-  margin-bottom: 1em;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  overflow: hidden;
 }
 
 header * {
   text-decoration: none;
 }
 
-header h1 {
-  color: white;
-  font-weight: 900;
-  letter-spacing: -0.05em;
+header #header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header ul {
@@ -45,12 +55,5 @@ header ul {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-}
-
-header ul #theme-toggle {
-  background-color: #ccc;
-  padding: 0.5em;
-  border: none;
-  border-radius: 50%;
 }
 /*# sourceMappingURL=index.css.map */

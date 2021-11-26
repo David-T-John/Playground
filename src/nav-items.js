@@ -1,10 +1,22 @@
 export const navItems = [
     {
-        label: 'Home',
+        label: 'Login',
+        path: '/login',
+    },
+    {
+        label: 'Logout',
+        path: '/logout',
+    },
+    {
+        label: 'API',
         path: '/',
     },
     {
-        label: 'Login',
-        path: '/login',
+        label: 'Documentation',
+        path: '/',
+    },
+    {
+        label: 'Account',
+        path: '/',
     },
 ];
