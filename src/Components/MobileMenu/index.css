@@ -1,0 +1,35 @@
+#mobile-menu {
+  -webkit-box-shadow: 0em 0.2em 1em 0.1em #33333380;
+          box-shadow: 0em 0.2em 1em 0.1em #33333380;
+  z-index: 99;
+  top: 9vh;
+  position: absolute;
+  background: #ccc;
+  min-height: 80vh;
+  width: 75vw;
+  max-width: 75vw;
+  border-radius: 0.2em;
+  padding: 2em 2em;
+  right: 0;
+}
+
+#mobile-menu #mobile-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1em;
+  font-weight: 700;
+  padding-left: 1em;
+  float: left;
+}
+
+@media screen and (min-width: 768px) {
+  #mobile-menu {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */

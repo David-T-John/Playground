@@ -16,7 +16,7 @@ const Welcome = () => {
     }
 
     return (
-        <span id="welcome" style={{color: theme?.color}}>
+        <span id="welcome">
             Welcome{user?.username && ' ' + user.username}!<br/>{' ' + getTimeStamp()}
         </span>
     )

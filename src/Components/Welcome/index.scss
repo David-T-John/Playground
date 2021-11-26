@@ -1,5 +1,10 @@
+#welcome {
+  font-size: 0.66em;
+  color: white;
+}
 @media screen and (max-width: 1220px) {
   #welcome {
     display: none;
+    font-size: 0.5em;
   }
 }

@@ -9,16 +9,16 @@ import SettingsMenu from '../SettingsMenu';
 import IconButton from '../IconButton';
 import Brand from '../Brand';
 import Welcome from '../Welcome';
+import Nav from '../Nav';
+import MobileMenu from '../MobileMenu';
 
 const Header = () => {
 
     const [isSettingsMenuOpen, setIsSettingsMenuOpen] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isDetailedView, setIsDetailedView] = useState(true);
-    // const [time, setTime] = useState(new Date().toLocaleTimeString());
 
     const theme = useContext(ThemeContext);
-    const user = useContext(UserContext);
 
     const toggleSettingsMenu = () => {
         if (isMobileMenuOpen) { setIsMobileMenuOpen(false) }
@@ -26,7 +26,7 @@ const Header = () => {
     }
     const toggleMobileMenu = () => {
         if (isSettingsMenuOpen) { setIsSettingsMenuOpen(false) }
-        setIsMobileMenuOpen(!isSettingsMenuOpen);
+        setIsMobileMenuOpen(!isMobileMenuOpen);
     }
     const toggleDetailedView = () => {
         setIsDetailedView(!isDetailedView);
@@ -42,10 +42,7 @@ const Header = () => {
             </div>
             <div id="header-right">
                 <ul>
-                    {navItems.map((i, index) => 
-                        <NavItem key={index} path={i.path} label={i.label} />
-                    )}
-
+                    <Nav />
                     <IconButton 
                         click={theme?.updateTheme}
                         icon={theme?.darkMode ? faSun : faMoon}
@@ -64,6 +61,8 @@ const Header = () => {
                     
                     {isSettingsMenuOpen &&
                         <SettingsMenu isDetailedView={isDetailedView} toggleDetailedView={toggleDetailedView}/>}
+                    {isMobileMenuOpen &&
+                    <MobileMenu click={toggleMobileMenu} />}
                 </ul>
             </div>
 

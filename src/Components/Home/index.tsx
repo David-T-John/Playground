@@ -3,6 +3,7 @@ import './index.css';
 import Loading from '../Loading';
 import Page from '../Page';
 import { ThemeContext } from '../../context/ThemeContext';
+import ContentContainer from '../ContentContainer';
 
 const Home = () => {
 
@@ -14,9 +15,14 @@ const Home = () => {
         setIsLoading(false);
     } ,1000);
     
-    return isLoading ? <Loading size="3em"/> : (
-            <Page>
-                <h1 style={{color: theme?.color}}>Your favorite app's<br /> favorite app</h1>
+    return (
+            <Page style={{minHeight: "100vh"}}>
+                {isLoading ? <Loading size="3em"/> :
+                   <ContentContainer>
+                       <h1 style={{color: theme?.color}}>Your favorite app's<br /> favorite app</h1>
+                       <button className="button">Get Started</button>
+                    </ContentContainer>
+                }
             </Page>
     )
 }

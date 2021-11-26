@@ -1,0 +1,31 @@
+@import "../../main.scss";
+#mobile-menu {
+  @include shadow;
+  z-index: 99;
+  top: 9vh;
+  position: absolute;
+  background: #ccc;
+  min-height: 80vh;
+  width: 75vw;
+  max-width: 75vw;
+  border-radius: 0.2em;
+  padding: 2em 2em;
+  right: 0;
+  #mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    font-weight: 700;
+    padding-left: 1em;
+    float: left;
+    li.settings-item {
+      //   float: left;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #mobile-menu {
+    display: none;
+  }
+}
