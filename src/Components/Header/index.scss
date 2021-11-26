@@ -1,18 +1,23 @@
+@import "../../main.scss";
 header {
-  display: flex;
-  flex-direction: row;
+  @include row;
+  @include shadow;
+  z-index: 999;
   justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  background-color: blueviolet;
+  height: 9vh;
+  min-height: 3em;
   padding-inline-start: 7vw;
   padding-inline-end: 7vw;
+  transition: background-color 0.5s ease-in-out;
+  overflow: hidden;
+  * {
+    text-decoration: none;
+  }
+  #header-left {
+    @include row;
+  }
   ul {
-    display: flex;
-    flex-direction: row;
+    @include row;
     list-style: none;
-    li {
-      padding-left: 1em;
-    }
   }
 }

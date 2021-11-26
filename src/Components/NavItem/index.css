@@ -1,0 +1,31 @@
+li.nav-item {
+  font-weight: 600;
+  font-size: 0.9em;
+  display: none;
+}
+
+li.nav-item:hover {
+  background-color: "#ccc";
+}
+
+li.nav-item a {
+  color: white;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  li.nav-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.5em 0.75em;
+    border-radius: 0.33em;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+    margin-right: 0.5em;
+  }
+  li.nav-item:hover {
+    background-color: #444;
+  }
+}
+/*# sourceMappingURL=index.css.map */

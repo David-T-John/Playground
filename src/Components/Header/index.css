@@ -6,18 +6,41 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70px;
-  background-color: blueviolet;
+  -webkit-box-shadow: 0em 0.2em 1em 0.1em #33333380;
+          box-shadow: 0em 0.2em 1em 0.1em #33333380;
+  z-index: 999;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 9vh;
+  min-height: 3em;
   -webkit-padding-start: 7vw;
           padding-inline-start: 7vw;
   -webkit-padding-end: 7vw;
           padding-inline-end: 7vw;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+header * {
+  text-decoration: none;
+}
+
+header #header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header ul {
@@ -28,10 +51,9 @@ header ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
-}
-
-header ul li {
-  padding-left: 1em;
 }
 /*# sourceMappingURL=index.css.map */

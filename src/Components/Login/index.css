@@ -1,10 +1,8 @@
-form {
+#login-form {
   width: 380px;
+  height: 100%;
   border: solid 1px #ccc;
   padding: 2em;
-}
-
-form#login-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,22 +10,31 @@ form#login-form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #eee;
 }
 
-form#login-form label {
+#login-form label {
   font-size: 0.75em;
   font-weight: 600;
   letter-spacing: -0.05em;
   color: #333;
 }
 
-form#login-form input {
-  padding: 0.2em 0.3em;
+#login-form input {
+  padding: 0.6em 0.6em;
   margin: 0.2em 0em;
+  font-size: 1em;
 }
 
-form#login-form button {
-  background-color: blueviolet;
+#login-form input:focus {
+  outline-color: blue;
+  -webkit-transition: none;
+  transition: none;
+}
+
+#login-form button {
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
   color: white;
   border: none;
   padding: 0.4em 2em;
