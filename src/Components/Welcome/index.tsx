@@ -17,7 +17,7 @@ const Welcome = () => {
 
     return (
         <span id="welcome">
-            Welcome{user?.username && ' ' + user.username}!<br/>{' ' + getTimeStamp()}
+            {process.env.REACT_APP_SECRET || "Welcome"}{user?.username && ' ' + user.username}!<br/>{' ' + getTimeStamp()}
         </span>
     )
 };

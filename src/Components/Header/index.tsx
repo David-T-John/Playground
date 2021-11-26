@@ -3,8 +3,6 @@ import './index.css';
 import { ThemeContext } from '../../context/ThemeContext';
 import { UserContext } from '../../context/UserContext';
 import { faBars, faCog, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
-import {navItems} from '../../nav-items';
-import NavItem from '../NavItem/index';
 import SettingsMenu from '../SettingsMenu';
 import IconButton from '../IconButton';
 import Brand from '../Brand';
@@ -35,6 +33,7 @@ const Header = () => {
     return (
         <header 
             style={{background: theme?.headerBg}}
+            id="header"
         >
             <div id="header-left">
                 <Brand />
