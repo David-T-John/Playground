@@ -1,0 +1,42 @@
+#settings-menu-dropdown {
+  -webkit-box-shadow: 0em 0.2em 1em 0.1em #33333380;
+          box-shadow: 0em 0.2em 1em 0.1em #33333380;
+  position: absolute;
+  top: 9vh;
+  background: #ccc;
+  min-height: 25vh;
+  border-radius: 0.2em;
+  padding: 1em 2em;
+  font-size: 0.8em;
+  font-weight: 700;
+  min-width: 300px;
+  right: 7vw;
+}
+
+#settings-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#settings-list li.settings-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */

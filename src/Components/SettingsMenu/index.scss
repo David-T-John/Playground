@@ -1,0 +1,23 @@
+@import "../../main.scss";
+#settings-menu-dropdown {
+  @include shadow;
+  position: absolute;
+  top: 9vh;
+  background: #ccc;
+  min-height: 25vh;
+  border-radius: 0.2em;
+  padding: 1em 2em;
+  font-size: 0.8em;
+  font-weight: 700;
+  min-width: 300px;
+  right: 7vw;
+}
+#settings-list {
+  display: flex;
+  flex-direction: column;
+  li.settings-item {
+    @include row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

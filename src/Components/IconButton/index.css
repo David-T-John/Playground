@@ -1,0 +1,18 @@
+#theme-toggle,
+#settings-menu-toggle,
+#mobile-menu-toggle {
+  background-color: #ccc;
+  width: 2.2em;
+  height: 2.2em;
+  border: none;
+  border-radius: 50%;
+  font-size: 1em;
+  margin-left: 0.66em;
+}
+
+@media screen and (min-width: 768px) {
+  #mobile-menu-toggle {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */
