@@ -1,0 +1,8 @@
+.page-container {
+  z-index: 1;
+  min-width: 100vw;
+  padding: 3vh 7vw;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+/*# sourceMappingURL=index.css.map */
