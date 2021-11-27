@@ -1,19 +1,19 @@
 #settings-menu-dropdown {
   -webkit-box-shadow: 0em 0.2em 1em 0.1em #33333380;
           box-shadow: 0em 0.2em 1em 0.1em #33333380;
+  z-index: 99;
   position: absolute;
   top: 9vh;
   background: #ccc;
-  min-height: 25vh;
   border-radius: 0.2em;
   padding: 1em 2em;
   font-size: 0.8em;
   font-weight: 700;
-  min-width: 300px;
+  max-width: 60vw;
   right: 7vw;
 }
 
-#settings-list {
+#settings-menu-dropdown #settings-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,7 +23,7 @@
           flex-direction: column;
 }
 
-#settings-list li.settings-item {
+#settings-menu-dropdown #settings-list li.settings-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

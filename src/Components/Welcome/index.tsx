@@ -16,8 +16,8 @@ const Welcome = () => {
     }
 
     return (
-        <span id="welcome" style={{color: theme?.color}}>
-            Welcome{user?.username && ' ' + user.username}!<br/>{' ' + getTimeStamp()}
+        <span id="welcome">
+            {process.env.REACT_APP_SECRET || "Welcome"}{user?.username && ' ' + user.username}!<br/>{' ' + getTimeStamp()}
         </span>
     )
 };

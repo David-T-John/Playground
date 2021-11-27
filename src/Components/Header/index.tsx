@@ -3,22 +3,20 @@ import './index.css';
 import { ThemeContext } from '../../context/ThemeContext';
 import { UserContext } from '../../context/UserContext';
 import { faBars, faCog, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
-import {navItems} from '../../nav-items';
-import NavItem from '../NavItem/index';
 import SettingsMenu from '../SettingsMenu';
 import IconButton from '../IconButton';
 import Brand from '../Brand';
 import Welcome from '../Welcome';
+import Nav from '../Nav';
+import MobileMenu from '../MobileMenu';
 
 const Header = () => {
 
     const [isSettingsMenuOpen, setIsSettingsMenuOpen] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isDetailedView, setIsDetailedView] = useState(true);
-    // const [time, setTime] = useState(new Date().toLocaleTimeString());
 
     const theme = useContext(ThemeContext);
-    const user = useContext(UserContext);
 
     const toggleSettingsMenu = () => {
         if (isMobileMenuOpen) { setIsMobileMenuOpen(false) }
@@ -26,7 +24,7 @@ const Header = () => {
     }
     const toggleMobileMenu = () => {
         if (isSettingsMenuOpen) { setIsSettingsMenuOpen(false) }
-        setIsMobileMenuOpen(!isSettingsMenuOpen);
+        setIsMobileMenuOpen(!isMobileMenuOpen);
     }
     const toggleDetailedView = () => {
         setIsDetailedView(!isDetailedView);
@@ -35,6 +33,7 @@ const Header = () => {
     return (
         <header 
             style={{background: theme?.headerBg}}
+            id="header"
         >
             <div id="header-left">
                 <Brand />
@@ -42,10 +41,7 @@ const Header = () => {
             </div>
             <div id="header-right">
                 <ul>
-                    {navItems.map((i, index) => 
-                        <NavItem key={index} path={i.path} label={i.label} />
-                    )}
-
+                    <Nav />
                     <IconButton 
                         click={theme?.updateTheme}
                         icon={theme?.darkMode ? faSun : faMoon}
@@ -64,6 +60,8 @@ const Header = () => {
                     
                     {isSettingsMenuOpen &&
                         <SettingsMenu isDetailedView={isDetailedView} toggleDetailedView={toggleDetailedView}/>}
+                    {isMobileMenuOpen &&
+                    <MobileMenu click={toggleMobileMenu} />}
                 </ul>
             </div>
 

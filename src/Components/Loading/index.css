@@ -32,7 +32,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5em;
 }
 
 .loading-container div.loading {

@@ -1,0 +1,19 @@
+.form-input-label {
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  color: #333;
+}
+
+.form-input {
+  padding: 0.6em 0.6em;
+  margin: 0.2em 0em;
+  font-size: 1em;
+}
+
+.form-input:focus {
+  outline-color: blue;
+  -webkit-transition: none;
+  transition: none;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,4 @@
+@import "../../main.scss";
+button.form-button {
+  @include button;
+}

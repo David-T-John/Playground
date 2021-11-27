@@ -1,0 +1,17 @@
+button.form-button {
+  font-weight: 600;
+  font-size: 0.9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5em 0.75em;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  color: white;
+  border: none;
+  border-radius: 0.33em;
+  padding: 0.4em 2em;
+  margin: 0.2em 0em;
+  background-color: blue;
+}
+/*# sourceMappingURL=index.css.map */
